@@ -409,7 +409,7 @@ footer{
     }
     .popItems{
         flex-direction: row;
-        height: 180px;
+        height: 100%;
     }
     .popItem{
         margin: 20px 10px 0 10px;
@@ -460,7 +460,6 @@ footer{
     }
     .popItems{
         flex-direction: column;
-        height:100%;
     }
     .popItem{
         flex-direction: row;
