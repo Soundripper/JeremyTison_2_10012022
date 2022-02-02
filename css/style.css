@@ -528,7 +528,6 @@ footer{
     }
     #populaire{
         margin: 0;
-        height: 650px;
         order: 1;
         flex:1;
         border-radius: 0;
@@ -540,6 +539,7 @@ footer{
         width : 95%;
         height: 250px;
         /*direction: rtl;*/
+        justify-content: flex-start;
     }
     .popTxt{
     }
