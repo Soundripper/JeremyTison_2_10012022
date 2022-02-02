@@ -187,13 +187,17 @@ h3.filterTitle{
 .hebItem:hover{
     cursor: pointer;
 }
-.hebImg{
+.hebImg{ 
+    flex:1;
     display:flex;
+    align-content:center;
+    justify-content: center;
     overflow:hidden;
 }
 .hebImg img{
-    flex:1;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 div.hebTxt>h3, div.hebTxt>h4{
     margin: 4px;
