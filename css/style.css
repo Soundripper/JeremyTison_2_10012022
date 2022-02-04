@@ -8,8 +8,17 @@ body{
     font-size: medium;
     overflow-x: hidden;
 }
+h2{
+    font-size: 1em;
+}
+h3{
+    font-size: 0.9em;
+}
+h4{
+    font-size: 0.8em;
+}
 main{
-    padding: 20px 50px 20px 50px;
+    padding: 0px 50px 0px 50px;
     max-width: 1230px;
     margin: auto;
     box-sizing:content-box;
@@ -18,7 +27,6 @@ main{
 header{
     display : flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 header nav{
@@ -37,10 +45,18 @@ header nav div{
 header a hr {
     width: 100%;
     opacity: 20%;
+    margin : 0;
+    height: 2px;
+    background-color : #0065FC;
+    border: 0;
 }
 header a.active hr  {
     width: 100%;
     opacity: 100%;
+}
+.nav{
+    margin :0;
+    padding:0;
 }
 
 /************** RECHERCHER TITLE ************/
@@ -156,23 +172,23 @@ h3.filterTitle{
 #hebpop{
     display:flex;
     flex-direction : row;
-    justify-content: space-around;
 }
 /************** HEB ************/
 #hebergement{
+    flex: 1;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 20px 40px 20px 40px;
-    height: 650px;
+    align-items: center;
 }
 .hebItems{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 500px;
 }
 .hebItem{
+    margin : 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,8 +224,8 @@ div.hebTxt>.star{
     padding: 6px 2px 0 2px;
 }
 #hebPlus{
-    position:relative;
-    bottom: 20px;
+    display : flex;
+    margin-top: 10px;
 }
 
 /************** POP ************/
@@ -222,9 +238,6 @@ div.hebTxt>.star{
 .popItems{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 500px;
 }
 .popItem{
     display: flex;
@@ -234,6 +247,8 @@ div.hebTxt>.star{
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
+    margin-top : 10px;
+    margin-bottom: 20px;
     box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.1);
 }
 .popItem:hover{
@@ -375,18 +390,22 @@ div.actTxt1>h3{
 footer h3, footer h2{
     text-transform: capitalize;
 }
-footer{
+.footer-back{
+    display: flex;
     background-color: #F2F2F2;
+    width:100vw;
+    justify-content: center;
 }
 .footerContainer{
+    width: 90%;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    width:900px;
-    padding : 20px 20px 20px 0;
+    justify-content:space-between;
+    padding : 20px 20px 20px 20px;
 }
 
-@media screen and (max-width: 1330px){
+@media screen and (max-width: 1200px){
     #hebpop{
         display:flex;
         flex-direction : column;
@@ -420,7 +439,6 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content:space-around;
-        width:700px;
         padding : 20px 20px 20px 0;
     }
     #hebPlus{
@@ -466,22 +484,22 @@ footer{
         display: flex;
         max-height: 150px;
     }
-    .popimg>img{
-        width: unset;
-    }
     .footerContainer{
-    width:650px;
-    padding : 20px 20px 20px 20px;
+    padding : 10px;
     }
 }
 
 @media screen and (max-width: 768px){
     main{
         margin: 0;
-        padding: 0px 0px 0px 0px;
+        padding: 0px;
     }
     header{
         flex-direction: column;
+    }
+    header img{
+        width:120px;
+        align-self: center;
     }
     header nav{
         order:2;
@@ -518,6 +536,7 @@ footer{
         margin-top : 10px;
         border-radius: 0;
         background-color: white;
+        padding: 20px;
     }
     .hebItems{
         flex:1;
@@ -531,6 +550,7 @@ footer{
         order: 1;
         flex:1;
         border-radius: 0;
+        padding: 20px;
     }
     .popItems{
         flex-direction: column;
@@ -545,11 +565,12 @@ footer{
     }
     
     #activities{
+        margin: 0;
         display: flex;
         flex: 1;
         flex-direction: column;
-        padding: 20px 40px 0px 40px;
         margin-top: 0px;
+        padding: 20px;
     }
     .actItems {
         flex-direction: column;
