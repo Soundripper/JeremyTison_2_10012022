@@ -574,8 +574,6 @@ footer h3, footer h2{
         /*direction: rtl;*/
         justify-content: flex-start;
     }
-    .popTxt{
-    }
     
     #activities{
         margin: 0;
@@ -603,6 +601,10 @@ footer h3, footer h2{
         justify-content: flex-start;
         margin: 0;
         width:100%;
+    }
+    
+    .footerColumn{
+        width: 100%;
     }
 }
 
