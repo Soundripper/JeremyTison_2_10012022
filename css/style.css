@@ -400,22 +400,14 @@ footer h3, footer h2{
 }
 .footer-back{
     background-color: #F2F2F2;
-    width:100%;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    padding: 20px 0 30px 0;
-}
-.footer-constraint{
-    padding: 0px 30px 0px 30px;
-    max-width: 1230px;
-    box-sizing:content-box;
-    width:100%;
+    padding: 20px 30px 30px 30px;
 }
 .footerContainer{
-    flex: 1;
     display: flex;
+    flex: 1;
+    max-width: 1230px;
 }
 .footerColumn{
     width: 50%;
