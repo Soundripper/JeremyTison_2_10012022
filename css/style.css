@@ -186,7 +186,7 @@ h3.filterTitle{
 .hebItems{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .hebItem{
@@ -501,6 +501,7 @@ footer h3, footer h2{
     .hebItem{
         width : 100%;
         height: 250px;
+        margin : 10px 10px 10px 10px;
     }
     #populaire{
         margin: 0;
