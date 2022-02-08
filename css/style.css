@@ -38,6 +38,10 @@ header nav a{
     flex-direction: column;
     text-decoration: none;
     text-align: center;
+    color : blavk;
+}
+header nav a.active{
+    color : #0065FC;
 }
 header nav div{
     width : 150px;
@@ -182,7 +186,7 @@ h3.filterTitle{
 .hebItems{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .hebItem{
