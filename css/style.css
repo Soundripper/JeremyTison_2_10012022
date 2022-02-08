@@ -80,7 +80,7 @@ header a.active hr  {
     justify-content: space-between;
     border:1px solid #F2F2F2;
     border-radius: 20px;
-    margin: 30px 0 30px 0;
+    margin: 20px 0 30px 0;
 }
 div#positionIcon{
     display:flex;
@@ -108,7 +108,8 @@ form button{
 /************** RECHERCHER FILTRES ************/
 #filters{
     display:flex;
-    margin-top : 15px;
+    margin-top : 10px;
+    margin-bottom : 10px;
 }
 #filtersBtns{
     width:900px;
@@ -118,7 +119,6 @@ form button{
 }
 #filters .filterBtn{
     background-color: white;
-    margin-left: 10px;
     height : 50px;
     flex-basis: auto;
     display: flex;
@@ -272,9 +272,9 @@ div.hebTxt>.star{
     overflow:hidden;
 }
 .popImg>img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .popTxt{
     display: flex;
@@ -479,6 +479,10 @@ footer h3, footer h2{
     }
     #searchBtn{
         display:none;
+    }
+    #filters .filterBtn{
+        margin: 5px;
+        justify-content: flex-start;
     }
     #searchBtnMagnifier{
         display:block;
